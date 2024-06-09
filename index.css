@@ -1,11 +1,14 @@
+/* Setting color to the background */
 body{
     background-color: #FFFFFF;
 }
+/* Setting up text align and content for header */
 .header{
     display: flex;
     justify-content: center;
     color: #424242;
 }
+/* Setting the container as flex and content align */
 .calc{
     display: flex;
     flex-wrap: nowrap;
@@ -13,10 +16,12 @@ body{
     align-items: center;
     flex-direction: column;
 }
+/* Setting border radius to cover div */
 .cover{
     border-radius: 7px;
     box-shadow: 0 0 10px #424242;
 }
+/* Design setting for display div such as color, radius, height and width */
 .display{
     background-color: #6d6f6fe0;
     height: 120px;
@@ -27,6 +32,7 @@ body{
     align-items: center;
     display: flex;
 }
+/* Design code for input tag */
 #result{
     border: 1px solid #6d6f6fe0;
     background-color: #acabab;
@@ -36,12 +42,14 @@ body{
     height: 60px;
     width: 280px;
 }
+/* design code for div tag which contains button in it */
 .line{
     width: 300px;
     height: 65px;
     display: flex;
     justify-content: space-evenly;
 }
+/* design code  for button contains symbol */
 .symbol{
     border: 1px solid #BBBBBB;
     width: 87px;
@@ -53,6 +61,7 @@ body{
     font-size: 25px;
     background-color: #DADADA;
 }
+/* Design code for button contains number */
 .number{
     width: 87px;
     height: 65px;
@@ -64,15 +73,7 @@ body{
     background-color: #EEEEEE;
     border: 1px solid #BBBBBB;
 }
-.query{
-    font-size: 40px;
-    padding-top: 10px;
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    color: white;
-}
+/* Design code for input tag */
 .result{
     font-size: 30px;
     display: inline-block;
