@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Calculator</h1>
+    </div>
+    <p id="description" style="text-align: center;">DOM Calculator task.</p>
+    <div class="calc">
+        <div class="cover">
+            <div class="display">
+               <input id="result" type="text">
+            </div>
+            <div class="line">
+                <button id="clear" onclick="clr()" type="button" class="symbol" style="color: red;">
+                    C
+                </button>
+                <button type="button" class="symbol" id="delete" onclick="del()">
+                    <img width="24" height="24" src="https://img.icons8.com/material/24/clear-symbol--v1.png" alt="clear-symbol--v1"/>
+                </button>
+                <button onclick="getValue('%')" type="button" class="symbol">
+                    %
+                </button>
+                <button onclick="getValue('/')" type="button" class="symbol">
+                    /
+                </button>
+            </div>
+            <div class="line">
+                <button id="7" onclick="getValue(7)" type="button" class="number">
+                    7
+                </button>
+                <button id="8" onclick="getValue(8)" type="button" class="number">
+                    8
+                </button>
+                <button id="9" onclick="getValue(9)" type="button" class="number">
+                    9
+                </button>
+                <button onclick="getValue('*')" type="button" class="symbol">
+                    *
+                </button>
+            </div>
+            <div class="line">
+                <button id="4" onclick="getValue(4)" type="button" class="number">
+                    4
+                </button>
+                <button id="5" onclick="getValue(5)" type="button" class="number">
+                    5
+                </button>
+                <button id="6" onclick="getValue(6)" type="button" class="number">
+                    6
+                </button>
+                <button id="subtract" onclick="getValue('-')" type="button" class="symbol">
+                    -
+                </button>
+            </div>
+            <div class="line">
+                <button id="1" onclick="getValue(1)" type="button" class="number">
+                    1
+                </button>
+                <button id="2" onclick="getValue(2)" type="button" class="number">
+                    2
+                </button>
+                <button id="3" onclick="getValue(3)" type="button" class="number">
+                    3
+                </button>
+                <button id="add" onclick="getValue('+')" type="button" class="symbol">
+                    +
+                </button>
+            </div>
+            <div class="line" style="border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;">
+                <button id="0" onclick="getValue(0)" type="button" class="number" style="width: 180px; border-bottom-left-radius: 7px;">
+                    0
+                </button>
+                <button onclick="getValue('.')" type="button" class="symbol" style="width: 89px;">
+                    .
+                </button>
+                <button id="equal" onclick="cal()" type="button" class="symbol" style="background: #8e908e; border-bottom-right-radius: 7px; width: 88px;">
+                    =
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
